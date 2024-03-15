@@ -1,17 +1,27 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import ItemReactTab from "../ItemReactTab";
 import useProduct from "../../../../Hooks/useProduct";
+import useAuth from "../../../../Hooks/useAuth";
+import toast from "react-hot-toast";
 
 const ProductView = () => {
   const { id } = useParams();
+  const [product] = useProduct();
+  const { user } = useAuth();
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // Load Data
   const [pdt, setProduct] = useState([]);
   useEffect(() => {
     fetch(`http://localhost:8000/product/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, [id]);
+  
   const {
+    _id,
     img,
     additionalImages,
     size,
@@ -23,9 +33,15 @@ const ProductView = () => {
     rating,
   } = pdt;
 
-  const [product] = useProduct();
+  const productInformation = {
+    name,
+    img,
+    price,
+    size,
+    color,
+  };
 
-  //
+  // Product Mouse Hover
   const handleMouseEnter = (productId) => {
     const image = document.getElementById(`image-${productId}`);
     if (image) {
@@ -37,6 +53,33 @@ const ProductView = () => {
     const image = document.getElementById(`image-${productId}`);
     if (image) {
       image.classList.remove("zoomed");
+    }
+  };
+
+  // Handle Add To Cart
+  const handleAddToCart = () => {
+    const orderInfo = {
+      productId: _id,
+      productInformation,
+      email: user?.email,
+    };
+    if (user && user.email) {
+      fetch("http://localhost:8000/carts", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(orderInfo),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.insertedId) {
+            toast.success("product add successfully");
+          }
+        });
+    } else {
+      navigate("/login", { state: { from: location } });
+      toast("please login order to product");
     }
   };
 
@@ -95,7 +138,10 @@ const ProductView = () => {
           <p className="mb-3">
             <span>Color:</span> {color}
           </p>
-          <button className="mt-6  flex items-center FindMoreX">
+          <button
+            onClick={handleAddToCart}
+            className="mt-6  flex items-center FindMoreX"
+          >
             <small className="bg-orange-500 rounded-sm text-white p-4">
               ADD TO CART
             </small>

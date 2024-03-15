@@ -7,29 +7,11 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { Link } from "react-router-dom";
-import "./Header.css";
+
 import useAuth from "../../Hooks/useAuth";
 import DropDown from "../DropDown/DropDown";
 import { useEffect, useState } from "react";
-const components = [
-  {
-    title: "Single",
-    href: "#",
-  },
 
-  {
-    title: "Portfolio",
-    href: "#",
-  },
-  {
-    title: "Standard",
-    href: "#",
-  },
-  {
-    title: "Portfolio Grid",
-    href: "#",
-  },
-];
 const shops = [
   {
     title: "Cart",
@@ -43,10 +25,10 @@ const shops = [
     title: "CheckOut",
     href: "/checkout",
   },
-  {
-    title: "My Account",
-    href: "/account",
-  },
+  // {
+  //   title: "My Account",
+  //   href: "/account",
+  // },
 ];
 const pages = [
   {
@@ -122,26 +104,7 @@ export function Header() {
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-slate-50">
-                  Portfolio
-                </NavigationMenuTrigger>
-                <NavigationMenuContent className="text-sm bg-slate-50 italic">
-                  <ul className=" w-[400px]  p-4 md:w-[500px]  lg:w-[250px] ">
-                    {components.map((component) => (
-                      <div
-                        key={component.title}
-                        className="block select-none space-y-1 cursor-pointer rounded-md py-3 px-4 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      >
-                        <Link to={component.href}>
-                          <p>{component.title}</p>
-                          <p className="border-0 border-b border-red-500 h-1 w-4"></p>
-                        </Link>
-                      </div>
-                    ))}
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
+
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="bg-slate-50">
                   Shop
@@ -162,6 +125,13 @@ export function Header() {
                   </ul>
                 </NavigationMenuContent>
               </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="bg-slate-50">
+                  <Link to="/portfolio">Portfolio</Link>
+                </NavigationMenuTrigger>
+              </NavigationMenuItem>
+
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="bg-slate-50">
                   <Link to="/blogs">Blog</Link>

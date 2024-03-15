@@ -77,6 +77,10 @@
 
 /*  */
 
+.Website_Name{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .WhatSaying {
   font-size: 50px;
   font-weight: bold;
@@ -125,7 +129,7 @@
 
 .imgHover {
   transition: transform 0.5s;
-  box-shadow: rgb(207, 207, 207) 10px 10px 20px -4px;
+  box-shadow: rgb(224, 224, 224) 10px 10px 20px -4px;
 }
 .imgHover:hover {
   transform: translateY(-13px);
@@ -181,3 +185,33 @@ header.hidden {
   display: none;
 }
 
+/* conversion */
+.imContainer {
+  position: relative;
+}
+
+.image-wrapper {
+  position: absolute;
+  animation: moveUpDown 6s infinite alternate;
+}
+
+@keyframes moveUpDown {
+  from {
+    top: -50px;
+  }
+  to {
+    top: 200px;
+  }
+}
+/* text */
+.text-container {
+  transition: opacity 3s ease;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}

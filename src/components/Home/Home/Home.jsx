@@ -6,12 +6,13 @@ import Blog from "../Blog/Blog";
 import BusinessCarousel from "../BusinessCarousel/BusinessCarousel";
 import BusinessText from "../BusinessCarousel/BusinessText";
 import ExcitingFeature from "../ExcitingFeature/ExcitingFeature";
+import Conversion from "../Conversion/Conversion";
 
 const Home = () => {
   return (
     <div>
       <Helmet>
-        <title>Home || Free Sin</title>
+        <title>Home || Revenue</title>
       </Helmet>
       <SomePieceContent />
       <div className="container mt-[120px]">
@@ -24,6 +25,7 @@ const Home = () => {
         <BusinessCarousel />
       </div>
       <ExcitingFeature />
+      <Conversion/>
     </div>
   );
 };

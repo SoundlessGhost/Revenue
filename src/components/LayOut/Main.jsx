@@ -17,7 +17,9 @@ const Main = () => {
       <Outlet />
       {pathname == "/login" ||
       pathname == "/register" ||
-      pathname == "/not_found" ? null : (
+      pathname == "/not_found" ||
+      pathname == "/checkout" ||
+      pathname == "/cart" ? null : (
         <Footer />
       )}
       <Toaster />

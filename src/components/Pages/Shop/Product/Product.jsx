@@ -42,7 +42,7 @@ const Product = () => {
       <div className="mb-20 pb-20 pt-28 Website_Name text-center bg-slate-50">
         <div>
           <small>
-            <Link to="/">HOME</Link> / <Link to="/product">PRODUCT</Link>
+            <Link to="/">HOME</Link> / <Link to="/cart">CART</Link>
           </small>
         </div>
       </div>

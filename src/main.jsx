@@ -5,6 +5,7 @@ import "./index.css";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import Main from "./components/LayOut/Main";
 import NotFound from "./components/Pages/ErrorPage/notFound";
 import Home from "./components/Home/Home/Home";
@@ -19,8 +20,11 @@ import ProductView from "./components/Pages/Shop/Product/ProductView/ProductView
 import Blogs from "./components/Pages/Blogs/Blogs";
 import BlogsView from "./components/Pages/Blogs/BlogsView/BlogsView";
 import Service from "./components/Pages/Service/Service";
-import PrivateRoute from "./components/Provider/PrivateRoute/PrivateRoute";
 import UserAccount from "./components/Pages/Shop/UserAccount/UserAccount";
+import Portfolio from "./components/Pages/Portfolio/Portfolio";
+import Cart from "./components/Pages/Shop/Cart/Cart";
+import Checkout from "./Checkout";
+import PrivateRoute from "./components/Provider/PrivateRoute/PrivateRoute";
 
 const queryClient = new QueryClient();
 
@@ -56,6 +60,14 @@ const router = createBrowserRouter([
         element: <ProductView />,
       },
       {
+        path: "/cart",
+        element: <Cart />,
+      },
+      {
+        path: "/checkout",
+        element: <Checkout />,
+      },
+      {
         path: "/blogs",
         element: <Blogs />,
         loader: () => fetch("http://localhost:8000/blogs"),
@@ -67,6 +79,10 @@ const router = createBrowserRouter([
       {
         path: "/service",
         element: <Service />,
+      },
+      {
+        path: "/portfolio",
+        element: <Portfolio />,
       },
       {
         path: "/account",
