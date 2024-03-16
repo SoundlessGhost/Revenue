@@ -1,17 +1,22 @@
 /* eslint-disable react/prop-types */
 
-import { Navigate, useLocation } from "react-router";
+import { Navigate, useLocation } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 
 const PrivateRoute = ({ children }) => {
+  console.log("children:", children);
+
   const { user, loading } = useAuth();
   const location = useLocation();
+
   if (loading) {
-    return <p>loading ...</p>;
+    return (
+      <div className="flex justify-center py-[400px]">
+        <span className="loading loading-spinner loading-lg"></span>
+      </div>
+    );
   }
-  if (user) {
-    return children;
-  } else {
+  if (!user) {
     return (
       <Navigate
         to="/login"
@@ -19,6 +24,8 @@ const PrivateRoute = ({ children }) => {
         replace={true}
       ></Navigate>
     );
+  } else {
+    return children;
   }
 };
 

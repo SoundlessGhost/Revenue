@@ -67,6 +67,7 @@ export function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <>
       <header className={scrolled ? "scrolled" : ""}>

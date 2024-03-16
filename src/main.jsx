@@ -24,7 +24,6 @@ import UserAccount from "./components/Pages/Shop/UserAccount/UserAccount";
 import Portfolio from "./components/Pages/Portfolio/Portfolio";
 import Cart from "./components/Pages/Shop/Cart/Cart";
 import Checkout from "./Checkout";
-import PrivateRoute from "./components/Provider/PrivateRoute/PrivateRoute";
 
 const queryClient = new QueryClient();
 
@@ -86,11 +85,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/account",
-        element: (
-          <PrivateRoute>
-            <UserAccount />
-          </PrivateRoute>
-        ),
+        element: <UserAccount />,
       },
       {
         path: "/login",
