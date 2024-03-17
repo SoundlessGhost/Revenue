@@ -6,30 +6,13 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import useAuth from "../../Hooks/useAuth";
 import DropDown from "../DropDown/DropDown";
 import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 
-const shops = [
-  {
-    title: "Cart",
-    href: "/cart",
-  },
-  {
-    title: "Product",
-    href: "/product",
-  },
-  {
-    title: "CheckOut",
-    href: "/checkout",
-  },
-  // {
-  //   title: "My Account",
-  //   href: "/account",
-  // },
-];
 const pages = [
   {
     title: "Team",
@@ -44,14 +27,11 @@ const pages = [
     title: "About Us",
     href: "/about",
   },
-
-  {
-    title: "Error Page",
-    href: "/error_page",
-  },
 ];
 
 export function Header() {
+  const location = useLocation();
+  const navigate = useNavigate();
   const { user } = useAuth();
   const [scrolled, setScrolled] = useState(false);
   //
@@ -68,6 +48,35 @@ export function Header() {
     };
   }, []);
 
+  // handle_Go_Every Where
+
+  const handleGoCart = () => {
+    if (!user) {
+      navigate("/login", { state: { from: location } });
+      toast("please login first");
+    } else {
+      navigate("/cart");
+    }
+  };
+
+  const handleGoProduct = () => {
+    if (!user) {
+      navigate("/login", { state: { from: location } });
+      toast("please login first");
+    } else {
+      navigate("/product");
+    }
+  };
+
+  const handleGoCheckout = () => {
+    if (!user) {
+      navigate("/login", { state: { from: location } });
+      toast("please login first");
+    } else {
+      navigate("/checkout");
+    }
+  };
+
   return (
     <>
       <header className={scrolled ? "scrolled" : ""}>
@@ -75,8 +84,8 @@ export function Header() {
           <Link to="/">
             <div className="flex items-center">
               <img
-                className="w-10 mr-1"
-                src="https://cdn-icons-png.flaticon.com/128/10836/10836955.png"
+                className="w-8 mr-1"
+                src="https://cdn-icons-png.flaticon.com/128/3917/3917053.png"
                 alt=""
               />
               <p className="text-3xl">Revenue</p>
@@ -90,7 +99,7 @@ export function Header() {
                   Page
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="text-sm bg-slate-50 italic">
-                  <ul className=" w-[400px]  p-4 md:w-[500px]  lg:w-[250px] ">
+                  <ul className="p-4 md:w-[500px]  lg:w-[200px] ">
                     {pages.map((page) => (
                       <div
                         key={page.title}
@@ -111,7 +120,45 @@ export function Header() {
                   Shop
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="text-sm bg-slate-50 italic">
-                  <ul className=" w-[400px]  p-4 md:w-[500px]  lg:w-[250px] ">
+                  <div className="p-4 md:w-[500px]  lg:w-[200px] ">
+                    <ul>
+                      <div
+                        onClick={handleGoCart}
+                        className="block select-none space-y-1 cursor-pointer rounded-md py-3 px-4 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                      >
+                        <button>
+                          <p>Cart</p>
+                          <p className="border-0 border-b border-green-500 h-1 w-4"></p>
+                        </button>
+                      </div>
+                    </ul>
+
+                    <ul>
+                      <div
+                        onClick={handleGoProduct}
+                        className="block select-none space-y-1 cursor-pointer rounded-md py-3 px-4 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                      >
+                        <button>
+                          <p>Product</p>
+                          <p className="border-0 border-b border-green-500 h-1 w-4"></p>
+                        </button>
+                      </div>
+                    </ul>
+
+                    <ul>
+                      <div
+                        onClick={handleGoCheckout}
+                        className="block select-none space-y-1 cursor-pointer rounded-md py-3 px-4 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                      >
+                        <button>
+                          <p>Checkout</p>
+                          <p className="border-0 border-b border-green-500 h-1 w-4"></p>
+                        </button>
+                      </div>
+                    </ul>
+                  </div>
+
+                  {/* <ul className=" w-[400px]  p-4 md:w-[500px]  lg:w-[250px] ">
                     {shops.map((shop) => (
                       <div
                         key={shop.title}
@@ -123,7 +170,7 @@ export function Header() {
                         </Link>
                       </div>
                     ))}
-                  </ul>
+                  </ul> */}
                 </NavigationMenuContent>
               </NavigationMenuItem>
 

@@ -23,7 +23,7 @@ import Service from "./components/Pages/Service/Service";
 import UserAccount from "./components/Pages/Shop/UserAccount/UserAccount";
 import Portfolio from "./components/Pages/Portfolio/Portfolio";
 import Cart from "./components/Pages/Shop/Cart/Cart";
-import Checkout from "./Checkout";
+import Checkout from "./components/Pages/Shop/Product/Checkout/Checkout";
 
 const queryClient = new QueryClient();
 
@@ -64,7 +64,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/checkout",
-        element: <Checkout />,
+        element:<Checkout/>
       },
       {
         path: "/blogs",

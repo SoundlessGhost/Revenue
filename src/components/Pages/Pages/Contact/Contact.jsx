@@ -1,10 +1,14 @@
 // import React from 'react';
 
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
-    <div  className="mt-20">
+    <div className="mt-20">
+      <Helmet>
+        <title>Contact || The world of revenue</title>
+      </Helmet>
       <div className="flex justify-center py-20 Website_Name text-center bg-slate-50">
         <div>
           <small>
@@ -99,7 +103,11 @@ const Contact = () => {
 
       <div className="flex justify-around items-center mx-20 my-32 Website_Name">
         <div>
-          <img className="w-16" src="https://cdn-icons-png.flaticon.com/128/4293/4293688.png" alt="" />
+          <img
+            className="w-16"
+            src="https://cdn-icons-png.flaticon.com/128/4293/4293688.png"
+            alt=""
+          />
           <h1 className="text-3xl my-4">Help & Support</h1>
           <p className="">
             Email{" "}
@@ -108,7 +116,11 @@ const Contact = () => {
           </p>
         </div>
         <div>
-          <img className="w-16" src="https://cdn-icons-png.flaticon.com/128/6717/6717201.png" alt="" />
+          <img
+            className="w-16"
+            src="https://cdn-icons-png.flaticon.com/128/6717/6717201.png"
+            alt=""
+          />
           <h1 className="text-3xl my-4">Call Us</h1>
           <p>
             Talk to Our Team <span className=" text-blue-500">01794951003</span>
@@ -117,7 +129,11 @@ const Contact = () => {
           </p>
         </div>
         <div>
-          <img className="w-16" src="https://cdn-icons-png.flaticon.com/128/12523/12523289.png" alt="" />
+          <img
+            className="w-16"
+            src="https://cdn-icons-png.flaticon.com/128/12523/12523289.png"
+            alt=""
+          />
           <h1 className="text-3xl my-4">Social Media</h1>
           <p>
             Get in touch with Social <br /> media resources at

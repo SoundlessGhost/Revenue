@@ -44,7 +44,7 @@ const Cart = () => {
   return (
     <>
       <Helmet>
-        <title>Cart || Revenue</title>
+        <title>Cart || The world of revenue</title>
       </Helmet>
 
       <div className="pt-32 pb-20 Website_Name text-center bg-slate-50">

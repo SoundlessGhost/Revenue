@@ -65,7 +65,7 @@ const Login = () => {
   return (
     <div className="bg-gray-50">
       <Helmet>
-        <title>Login || Revenue</title>
+        <title>Login || The world of revenue</title>
       </Helmet>
 
       <div className="grid grid-cols-[3fr,1.2fr] ml-10">
@@ -75,8 +75,8 @@ const Login = () => {
             className="flex cursor-pointer items-center mt-4"
           >
             <img
-              className="w-10 mr-1"
-              src="https://cdn-icons-png.flaticon.com/128/10836/10836955.png"
+              className="w-8 mr-1"
+              src="https://cdn-icons-png.flaticon.com/128/3917/3917053.png"
               alt=""
             />
             <p className="Website_Name text-3xl">Revenue</p>

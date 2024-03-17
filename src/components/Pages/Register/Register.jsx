@@ -48,7 +48,7 @@ const Register = () => {
     <div>
       <div className=" bg-gray-50">
         <Helmet>
-          <title>Register || Revenue</title>
+          <title>Register || The world of revenue</title>
         </Helmet>
         <div className="grid grid-cols-[1.2fr,3fr]">
           <div className="h-[100vh] bg-slate-400 text-center Website_Name">
@@ -57,8 +57,8 @@ const Register = () => {
               className="flex items-center mt-4 ml-10 cursor-pointer"
             >
               <img
-                className="w-10 mr-1"
-                src="https://cdn-icons-png.flaticon.com/128/10836/10836955.png"
+                className="w-8 mr-1"
+                src="https://cdn-icons-png.flaticon.com/128/3917/3917053.png"
                 alt=""
               />
               <p className="Website_Name text-3xl">Revenue</p>

@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-        <title>Home || Revenue</title>
+        <title>Home || The world of revenue</title>
       </Helmet>
       <SomePieceContent />
       <div className="container mt-[120px]">

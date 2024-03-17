@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
-import useAuth from "./components/Hooks/useAuth";
-import useCart from "./components/Hooks/useCart";
+import useAuth from "../../../../Hooks/useAuth";
+import useCart from "../../../../Hooks/useCart";
 
 const Checkout = () => {
   const { user } = useAuth();
@@ -13,7 +13,7 @@ const Checkout = () => {
   return (
     <div className="mt-32 mx-28 Website_Name flex justify-between">
       <Helmet>
-        <title>Checkout || Revenue</title>
+        <title>Checkout || The world of revenue</title>
       </Helmet>
 
       <div>

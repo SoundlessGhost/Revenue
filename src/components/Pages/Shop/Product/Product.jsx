@@ -4,6 +4,7 @@ import useProduct from "../../../Hooks/useProduct";
 import { useEffect, useState } from "react";
 
 import { PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
+import { Helmet } from "react-helmet";
 
 const Product = () => {
   const [product] = useProduct();
@@ -39,6 +40,9 @@ const Product = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Product || The world of revenue</title>
+      </Helmet>
       <div className="mb-20 pb-20 pt-28 Website_Name text-center bg-slate-50">
         <div>
           <small>

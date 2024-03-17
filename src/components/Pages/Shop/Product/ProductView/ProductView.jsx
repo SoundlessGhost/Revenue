@@ -4,6 +4,7 @@ import ItemReactTab from "../ItemReactTab";
 import useProduct from "../../../../Hooks/useProduct";
 import useAuth from "../../../../Hooks/useAuth";
 import toast from "react-hot-toast";
+import { Helmet } from "react-helmet";
 
 const ProductView = () => {
   const { id } = useParams();
@@ -85,6 +86,9 @@ const ProductView = () => {
 
   return (
     <div className="mt-36 mr-20 ml-40 Website_Name">
+       <Helmet>
+        <title>View Product || The world of revenue</title>
+      </Helmet>
       <div className="flex">
         <div>
           <div>

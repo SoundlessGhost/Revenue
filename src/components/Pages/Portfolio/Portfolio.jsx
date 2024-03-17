@@ -6,7 +6,7 @@ const Portfolio = () => {
   return (
     <div className="py-32 Website_Name ">
       <Helmet>
-        <title>Portfolio || Revenue</title>
+        <title>Portfolio || The world of revenue</title>
       </Helmet>
       <Parallax
         bgImage="https://images.unsplash.com/photo-1519095657781-b206d4b7aad3?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHVucGxhc2h8ZW58MHx8MHx8fDA%3D"

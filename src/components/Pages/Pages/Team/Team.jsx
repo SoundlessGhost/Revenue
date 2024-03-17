@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import Ceo from "../../../../assets/shahed.jpg";
+import { Helmet } from "react-helmet";
 const Team = () => {
   return (
     <div  className="mt-20">
+       <Helmet>
+        <title>Team || The world of revenue</title>
+      </Helmet>
       <div className="flex justify-center py-20 Website_Name text-center bg-slate-50">
         <div>
           <small>

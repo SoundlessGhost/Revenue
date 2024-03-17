@@ -1,10 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Helmet } from "react-helmet";
 import { Parallax } from "react-parallax";
 import { Link } from "react-router-dom";
 
 const Service = () => {
   return (
     <div className="pt-32 Website_Name ">
+      <Helmet>
+        <title>Service || The world of revenue</title>
+      </Helmet>
       <Parallax
         blur={{ min: -15, max: 15 }}
         bgImage="https://images.unsplash.com/photo-1682687218147-9806132dc697?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw1Nnx8fGVufDB8fHx8fA%3D%3D"

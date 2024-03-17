@@ -3,6 +3,7 @@
 import { Link, useLoaderData } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
+import { Helmet } from "react-helmet";
 const Blogs = () => {
   // pagination
   const loadedProduct = useLoaderData();
@@ -18,8 +19,15 @@ const Blogs = () => {
   }, [currentPage, itemPerPage]);
   const totalPage = Math.ceil(loadedProduct.length / itemPerPage);
   const pagesNumber = [...Array(totalPage).keys()];
+
+  const handleFindOutMoreClick = () => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page
+  };
   return (
     <>
+    <Helmet>
+      <title>Blogs || Revenue</title>
+    </Helmet>
       <div className="pt-32 pb-20 Website_Name text-center bg-slate-50">
         <div>
           <small>
@@ -39,7 +47,7 @@ const Blogs = () => {
               <h1 className="text-4xl my-4">{blog.name}</h1>
               <p>{blog.description}</p>
               <Link to={`/blogs/${blog._id}`}>
-                <button className="mt-6 flex items-center FindMore">
+                <button  onClick={handleFindOutMoreClick} className="mt-6 flex items-center FindMore">
                   <small>FIND OUT MORE</small>
                   <img
                     className="w-10 -ml-4 "

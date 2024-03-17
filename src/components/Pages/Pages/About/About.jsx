@@ -4,9 +4,13 @@ import { Link } from "react-router-dom";
 import Ceo from "../../../../assets/shahed.jpg";
 import ceo from "../../../../assets/ceo.jpg";
 import { AccordionDemo } from "./AccordionDemo";
+import { Helmet } from "react-helmet";
 const About = () => {
   return (
     <div className="mt-20">
+      <Helmet>
+        <title>About || The world of revenue</title>
+      </Helmet>
       <div className="flex justify-center py-20 Website_Name text-center bg-slate-50">
         <div>
           <small>
@@ -133,14 +137,14 @@ const About = () => {
               <br />
               transmit, analyze, and manipulate big data.
             </p>
-            <button className="mt-6 flex items-center FindMore">
+            <Link to="/service" className="mt-6 flex items-center FindMore">
               Learn more
               <img
                 className="w-10 -ml-4 "
                 src="https://cdn-icons-png.flaticon.com/128/13554/13554816.png"
                 alt=""
               />
-            </button>
+            </Link>
           </div>
           <AccordionDemo />
         </div>
