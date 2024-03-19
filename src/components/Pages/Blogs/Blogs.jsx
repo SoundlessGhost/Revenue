@@ -38,14 +38,14 @@ const Blogs = () => {
 
       <div className="Website_Name  bg-slate-50">
         {blogsPagination.map((blog) => (
-          <div key={blog._id} className=" pb-28">
+          <div key={blog._id} id="blogPadding" className="pb-28">
             <img className="w-[1100px] container" src={blog.img} alt="" />
-            <div className="w-[1100px] container">
+            <div id="BlogsContainer" className="w-[1100px] container">
               <p className="text-gray-400 mt-6">
                 <small>{blog.date}</small>
               </p>
               <h1 className="text-4xl my-4">{blog.name}</h1>
-              <p>{blog.description}</p>
+              <h5>{blog.description}</h5>
               <Link to={`/blogs/${blog._id}`}>
                 <button  onClick={handleFindOutMoreClick} className="mt-6 flex items-center FindMore">
                   <small>FIND OUT MORE</small>

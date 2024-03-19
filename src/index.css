@@ -75,8 +75,6 @@
   }
 }
 
-/*  */
-
 .Website_Name {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -254,7 +252,6 @@ header.hidden {
     font-size: 12px;
   }
   #mainSwiper {
-    
     margin-left: 220px;
     margin-top: -350px;
   }
@@ -496,5 +493,110 @@ header.hidden {
 
   .scrollHover img {
     width: 30px;
+  }
+
+  /* Service Style */
+
+  #parallaxContainer {
+    padding: 50px 0;
+  }
+  #parallaxContainer p {
+    font-size: 10px;
+  }
+  #parallaxContainer h3 {
+    font-size: 16px;
+    width: 400px;
+    margin: 0px 10px;
+  }
+  #AnimationImgContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #AnimationImgContainer img {
+    width: 40px;
+  }
+  #AnimationImgContainer h1 {
+    font-size: 16px;
+  }
+  #AnimationImgContainer p {
+    font-size: 10px;
+    width: 150px;
+  }
+  #singleAnimationImgContainer {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  #AvoidBusiness {
+    display: block;
+    margin: 40px;
+  }
+  #AvoidBusiness h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  #AvoidBusiness li {
+    font-size: 11px;
+    margin: 0px;
+  }
+  #AvoidBusiness p {
+    font-size: 10px;
+    width: 350px;
+  }
+  #AvoidBusiness small {
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  /* Blogs Style */
+
+  #BlogsContainer p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  #BlogsContainer h1 {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  #BlogsContainer h5 {
+    font-size: 14px;
+    width: 350px;
+  }
+  #BlogsContainer button small {
+    font-size: 10px;
+  }
+  #BlogsContainer button img {
+    width: 30px;
+  }
+  #blogPadding {
+    padding-bottom:60px ;
+  }
+  
+  /* Single View Blogs Style */
+
+  #BlogsViewContainer{
+    margin-top: 60px;
+  }
+  #BlogsViewSubContainer img{
+    width: 340px;
+    margin-bottom: 0;
+  }
+  #BlogsViewSubContainer p small{
+    margin: 0px;
+    font-size: 10px;
+  }
+  #BlogsViewSubContainer h1{
+    margin: 0px;
+    font-size: 18px;
+  }
+  #BlogsViewSubContainer p{
+    font-size: 10px;
+    width: 300px;
+  }
+  #recentPost{
+    display: none;
+  }
+  #ControlMyEmotion{
+    padding: 15px 10px;
+    text-align: center;
   }
 }

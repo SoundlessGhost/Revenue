@@ -12,15 +12,15 @@ const BlogsView = () => {
   }, [id]);
   const { img, name, date, description } = blg;
   return (
-    <div className="mt-32 container grid grid-cols-[9fr,3fr] Website_Name">
-      <div className="my-20">
+    <div id="BlogsViewContainer" className="mt-32 container grid grid-cols-[9fr,3fr] Website_Name">
+      <div id="BlogsViewSubContainer" className="my-20">
         <img className="rounded-lg w-[900px]" src={img} alt="" />
         <p className="text-gray-400 mt-6">
           <small>{date}</small>
         </p>
         <h1 className="text-4xl my-4">{name}</h1>
         <p className="w-[800px]">{description}</p>
-        <div className=" bg-slate-100 px-10 py-6 my-4 rounded-lg">
+        <div id="ControlMyEmotion" className=" bg-slate-100 px-10 py-6 my-4 rounded-lg">
           <p>
             I still love you But I don't need you anymore. Because I have
             learned How to control my emotions.
@@ -45,7 +45,7 @@ const BlogsView = () => {
         </p>
       </div>
 
-      <div>
+      <div id="recentPost">
         <div className="my-10">
           <h1 className="text-2xl mb-2 -ml-4">Recent Post</h1>
           <div className="">

@@ -14,17 +14,16 @@ const Service = () => {
         bgImage="https://images.unsplash.com/photo-1682687218147-9806132dc697?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw1Nnx8fGVufDB8fHx8fA%3D%3D"
         strength={200}
       >
-        <div className="py-[200px] text-center ">
+        <div id="parallaxContainer" className="py-[200px] text-center ">
           <p className="text-sm italic">WHAT WE OFFER</p>
-          <h3 className="text-4xl">
-            Designed for the digital market. And We provide new identities,{" "}
-            <br />
+          <h3 className="text-4xl w-[1200px] mx-24">
+            Designed for the digital market. And We provide new identities,
             develop brands and launch websites for businesses
           </h3>
         </div>
       </Parallax>
 
-      <div className="flex justify-between m-20">
+      <div id="AvoidBusiness" className="flex justify-between m-20">
         <div>
           <img
             className="w-[600px] rounded-md"
@@ -41,7 +40,7 @@ const Service = () => {
               one.
             </li>
           </div>
-          <p className="">
+          <p>
             Lorem ipsum dolor sit, amet <br /> consectetur adipisicing elit.
             Nesciunt, <br />
             est illum necessitatibus assumenda corrupti maiores quasi saepe ut,
@@ -63,8 +62,8 @@ const Service = () => {
       </div>
 
       <div className="m-20">
-        <div className="flex items-center justify-between">
-          <div>
+        <div id="AnimationImgContainer" className="flex items-center justify-between">
+          <div id="singleAnimationImgContainer">
             <img
               className="w-14"
               src="https://cdn-icons-gif.flaticon.com/7920/7920908.gif"
@@ -75,7 +74,8 @@ const Service = () => {
               Lorem, ipsum dolor sit amet <br /> consectetur adipisicing elit.
             </p>
           </div>
-          <div>
+
+          <div id="singleAnimationImgContainer">
             <img
               className="w-14"
               src="https://cdn-icons-gif.flaticon.com/7743/7743137.gif"
@@ -86,7 +86,8 @@ const Service = () => {
               Lorem, ipsum dolor sit amet <br /> consectetur adipisicing elit.
             </p>
           </div>
-          <div>
+
+          <div id="singleAnimationImgContainer">
             <img
               className="w-14"
               src="https://cdn-icons-gif.flaticon.com/8617/8617241.gif"
@@ -97,7 +98,8 @@ const Service = () => {
               Lorem, ipsum dolor sit amet <br /> consectetur adipisicing elit.
             </p>
           </div>
-          <div>
+
+          <div id="singleAnimationImgContainer">
             <img
               className="w-14"
               src="https://cdn-icons-gif.flaticon.com/8485/8485606.gif"
@@ -111,7 +113,7 @@ const Service = () => {
         </div>
       </div>
 
-      <div className="flex justify-between m-20">
+      <div id="AvoidBusiness" className="flex justify-between m-20">
         <div className="w-[600px]">
           <h1 className="text-5xl">What we can do for your business</h1>
           <div className="p-4 my-4">
