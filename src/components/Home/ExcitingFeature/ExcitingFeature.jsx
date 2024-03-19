@@ -1,12 +1,12 @@
 const ExcitingFeature = () => {
   return (
-    <div className="Website_Name bg-slate-50 py-20 mt-28">
-      <h1 className="text-4xl text-center mb-16">
+    <div className="Website_Name bg-slate-50 py-20 mt-28" id="ExcitingFeatureContainer">
+      <h1 className="text-4xl text-center mb-16" id="ExcitingFeatureTitle"> 
         Exciting features of Revenue
       </h1>
 
-      <div className="flex items-center justify-between mx-10 ">
-        <div className="hover:bg-white hover:shadow-lg p-6 hover:rounded-lg imgHover rounded-lg">
+      <div className="flex items-center justify-between mx-10 " id="ExcitingFeatureBG">
+        <div id="ExcitingFeatureCard" className="hover:bg-white hover:shadow-lg p-6 hover:rounded-lg imgHover rounded-lg">
           <img
             className="w-14 rounded-full"
             src="https://cdn-icons-gif.flaticon.com/7211/7211847.gif"
@@ -20,7 +20,8 @@ const ExcitingFeature = () => {
             corporis quidem obcaecati omnis?
           </p>
         </div>
-        <div className="hover:bg-white hover:shadow-lg p-6 hover:rounded-lg rounded-lg imgHover">
+
+        <div id="ExcitingFeatureCard" className="hover:bg-white hover:shadow-lg p-6 hover:rounded-lg rounded-lg imgHover">
           <img
             className="w-16 rounded-full"
             src="https://cdn-icons-gif.flaticon.com/8721/8721075.gif"
@@ -34,7 +35,8 @@ const ExcitingFeature = () => {
             corporis quidem obcaecati omnis?
           </p>
         </div>
-        <div className="hover:bg-white hover:shadow-lg p-6 hover:rounded-lg rounded-lg imgHover">
+
+        <div id="ExcitingFeatureCard" className="hover:bg-white hover:shadow-lg p-6 hover:rounded-lg rounded-lg imgHover">
           <img
             className=" w-14 rounded-full"
             src="https://cdn-icons-gif.flaticon.com/7211/7211784.gif"

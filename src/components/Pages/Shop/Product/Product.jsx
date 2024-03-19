@@ -30,7 +30,7 @@ const Product = () => {
   const [itemPerPage, setItemPerPage] = useState(6);
   useEffect(() => {
     fetch(
-      `http://localhost:8000/pagination?page=${currentPage}&limit=${itemPerPage}`
+      `https://revenue-server.vercel.app/pagination?page=${currentPage}&limit=${itemPerPage}`
     )
       .then((res) => res.json())
       .then((data) => setPagination(data));

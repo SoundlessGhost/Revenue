@@ -23,7 +23,7 @@ const Login = () => {
         const userInfo = {
           email: email,
         };
-        fetch("http://localhost:8000/user", {
+        fetch("https://revenue-server.vercel.app/user", {
           method: "POST",
           headers: {
             "content-type": "application/json",
@@ -47,7 +47,7 @@ const Login = () => {
         const userInfo = {
           email: user.email,
         };
-        fetch("http://localhost:8000/user", {
+        fetch("https://revenue-server.vercel.app/user", {
           method: "POST",
           headers: {
             "content-type": "application/json",

@@ -8,7 +8,7 @@ const useAxiosSecure = () => {
   const navigate = useNavigate();
 
   const axiosSecure = axios.create({
-    baseURL: "http://localhost:8000",
+    baseURL: "https://revenue-server.vercel.app",
   });
 
   useEffect(() => {

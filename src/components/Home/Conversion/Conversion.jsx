@@ -4,9 +4,9 @@ import Marquee from "react-fast-marquee";
 function Conversion() {
   return (
     <>
-      <div className="imContainer m-24 flex items-center justify-between Website_Name">
+      <div className="imContainer m-24 flex items-center justify-between Website_Name" id="conversionContainer">
         <div>
-          <img
+          <img id="firstImg"
             className="w-[500px] h-[350px] rounded-md"
             src="https://images.unsplash.com/photo-1576595580361-90a855b84b20?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdlYnNpdGUlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D"
             alt=""
@@ -20,12 +20,12 @@ function Conversion() {
           </div>
         </div>
 
-        <div>
+        <div id="conversionTextContainer">
           <p className="text-[14px] text-red-500">Be Ready</p>
           <h1 className="text-4xl mt-4">
             Increase Conversion with <br /> Cart Features
           </h1>
-          <p className="my-6">
+          <p className="my-6" id="conversionText">
             Our exclusive lifetime update theme & conversion centered design
             will keep your
             <br /> site running strong for many years to come.
@@ -41,9 +41,9 @@ function Conversion() {
         </div>
       </div>
 
-      <div className=" mb-20 Website_Name">
+      <div className=" mb-20 Website_Name" id="marqueeContainer">
         <Marquee>
-          <div className="flex items-center">
+          <div className="flex items-center"  id="marqueeSubContainer">
             <div className="p-8 imgHover hover:bg-yellow-500 cursor-default rounded-md ml-10 flex items-center bg-slate-200">
               <img
                 className="w-6 h-10 mr-4 "

@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 const SomePieceContent = () => {
   return (
     <div>
-      <p className="coding">@ 2024 Coding Interactive</p>
-      <p className="desire">Anyway How Are You</p>
-      <div className=" absolute right-6 top-60">
+      <p id="somePiece" className="coding">@ 2024 Coding Interactive</p>
+      <p id="somePiece" className="desire">Anyway How Are You</p>
+      <div className=" absolute right-6 top-60" id="SomePieceImgContent">
         <Link target="blank" to="https://www.facebook.com/shahed.abiddarpon">
           <img
             className="w-8 mb-4 rounded-full border-gray-400 cursor-pointer border p-2"

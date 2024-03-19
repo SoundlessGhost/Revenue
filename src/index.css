@@ -77,8 +77,9 @@
 
 /*  */
 
-.Website_Name{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.Website_Name {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .WhatSaying {
@@ -214,4 +215,200 @@ header.hidden {
 
 .visible {
   opacity: 1;
+}
+
+/* responsive Start  */
+
+@media (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+    max-width: 428px;
+  }
+
+  /* Header Style */
+
+  #navContainer {
+    display: none;
+  }
+  #websiteLogo {
+    width: 25px;
+  }
+  #headerName {
+    font-size: 25px;
+  }
+
+  /* Main Swiper Style */
+
+  #mainCarouselTitle {
+    font-size: 14px;
+  }
+  #mainCarouselSlider {
+    width: 200px;
+    font-size: 12px;
+  }
+  #mainSwiper {
+    margin-left: 250px;
+    margin-top: -350px;
+  }
+  #swiperImg {
+    width: 200px;
+    height: 150px;
+  }
+  .swiperStyle {
+    margin-left: 4px;
+  }
+
+  /* Some Piece Style*/
+
+  #SomePieceImgContent {
+    display: none;
+  }
+  .desire {
+    position: absolute;
+    top: 200px;
+    left: -20px;
+    font-weight: bold;
+    color: rgb(198, 198, 198);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 8px;
+    transform: rotate(-90deg);
+  }
+  .coding {
+    position: absolute;
+    top: 350px;
+    left: -30px;
+    font-weight: bold;
+    color: rgb(198, 198, 198);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 8px;
+    transform: rotate(-90deg);
+  }
+  #somePieceBtn {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  #somePieceBtn small {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+  #somePieceBtn img {
+    width: 30px;
+    margin-top: 4px;
+  }
+
+  /* Footer Style */
+
+  #footerContainer {
+    padding: 20px;
+    margin-top: 0px;
+  }
+  #footerTitle h1 {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  #footerTitle img {
+    display: none;
+  }
+  #footerTitle p {
+    font-size: 8px;
+  }
+  #footerMediaImg {
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 120px;
+  }
+  #footerMediaImg img {
+    position: relative;
+    width: 25px;
+    padding: 7px;
+  }
+  #footerText {
+    font-size: 10px;
+    width: 120px;
+  }
+
+  /* Conversion Style */
+
+  #conversionContainer {
+    margin: 20px 5px;
+  }
+  #conversionContainer #firstImg {
+    width: 250px;
+    height: 170px;
+  }
+  #conversionTextContainer {
+    width: 250px;
+    margin-left: 10px;
+  }
+  #conversionTextContainer h1 {
+    margin: 0px;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+  #conversionTextContainer a {
+    margin: 0px;
+    padding: 0px;
+  }
+  #conversionTextContainer a p {
+    padding: 5px;
+    font-size: 8px;
+  }
+  #conversionText {
+    margin: 0px;
+    font-size: 8px;
+  }
+
+  /* Marquee Style */
+
+  #marqueeContainer {
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  #marqueeContainer img {
+    width: 20px;
+    height: 25px;
+  }
+  #marqueeContainer h1 {
+    font-size: 12px;
+  }
+  #marqueeContainer p {
+    font-size: 10px;
+  }
+  #marqueeSubContainer {
+    padding: 10px;
+  }
+
+  /* ExcitingFeature Style */
+
+  #ExcitingFeatureBG {
+    margin: 0 35px;
+    display: block;
+  }
+  #ExcitingFeatureContainer {
+    padding: 10px 0;
+    margin: 0px;
+  }
+  #ExcitingFeatureTitle {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  #ExcitingFeatureCard {
+    width: 350px;
+    margin: 0px;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+  }
+  #ExcitingFeatureCard img {
+    width: 30px;
+  }
+  #ExcitingFeatureCard h1 {
+    margin: 0px;
+    font-size: 16px;
+  }
+  #ExcitingFeatureCard p {
+    font-size: 10px;
+    width: 300px;
+    margin: 0px;
+  }
 }

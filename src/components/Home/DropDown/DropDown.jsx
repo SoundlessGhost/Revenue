@@ -91,8 +91,8 @@ const DropDown = () => {
         <DropdownMenuItem>Support</DropdownMenuItem>
         <DropdownMenuItem disabled>API</DropdownMenuItem>
         <DropdownMenuSeparator />
-        <DropdownMenuItem>
-          <p onClick={handleLogOut}> Log out</p>
+        <DropdownMenuItem onClick={handleLogOut} className="cursor-pointer">
+          <p> Log out</p>
           <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
         </DropdownMenuItem>
       </DropdownMenuContent>

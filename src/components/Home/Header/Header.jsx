@@ -83,15 +83,17 @@ export function Header() {
         <div className="flex items-center justify-between container pt-5 pb-10 Website_Name bg-slate-50">
           <Link to="/">
             <div className="flex items-center">
-              <img
+              <img 
+              id="websiteLogo"
                 className="w-8 mr-1"
                 src="https://cdn-icons-png.flaticon.com/128/3917/3917053.png"
                 alt=""
               />
-              <p className="text-3xl">Revenue</p>
+              <p className="text-3xl" id="headerName">Revenue</p>
             </div>
           </Link>
 
+          <div id="navContainer">
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
@@ -157,20 +159,6 @@ export function Header() {
                       </div>
                     </ul>
                   </div>
-
-                  {/* <ul className=" w-[400px]  p-4 md:w-[500px]  lg:w-[250px] ">
-                    {shops.map((shop) => (
-                      <div
-                        key={shop.title}
-                        className="block select-none space-y-1 cursor-pointer rounded-md py-3 px-4 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      >
-                        <Link to={shop.href}>
-                          <p>{shop.title}</p>
-                          <p className="border-0 border-b border-green-500 h-1 w-4"></p>
-                        </Link>
-                      </div>
-                    ))}
-                  </ul> */}
                 </NavigationMenuContent>
               </NavigationMenuItem>
 
@@ -187,6 +175,7 @@ export function Header() {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
+          </div>
 
           <div className="flex items-center">
             {user ? (

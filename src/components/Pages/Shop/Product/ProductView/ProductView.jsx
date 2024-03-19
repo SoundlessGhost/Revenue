@@ -16,7 +16,7 @@ const ProductView = () => {
   // Load Data
   const [pdt, setProduct] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:8000/product/${id}`)
+    fetch(`https://revenue-server.vercel.app/product/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, [id]);
@@ -65,7 +65,7 @@ const ProductView = () => {
       email: user?.email,
     };
     if (user && user.email) {
-      fetch("http://localhost:8000/carts", {
+      fetch("https://revenue-server.vercel.app/carts", {
         method: "POST",
         headers: {
           "content-type": "application/json",

@@ -6,7 +6,7 @@ const BlogsView = () => {
   const { id } = useParams();
   const [blg, setBlg] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:8000/blogs/${id}`)
+    fetch(`https://revenue-server.vercel.app/blogs/${id}`)
       .then((res) => res.json())
       .then((data) => setBlg(data));
   }, [id]);

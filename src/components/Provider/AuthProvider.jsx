@@ -53,7 +53,7 @@ const AuthProvider = ({ children }) => {
       //
       if (currentUser && currentUser.email) {
         axios
-          .post("http://localhost:8000/jwt", { email: currentUser.email })
+          .post("https://revenue-server.vercel.app/jwt", { email: currentUser.email })
           .then((data) => {
             localStorage.setItem("accessToken", data.data.token);
             setLoading(false);

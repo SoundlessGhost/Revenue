@@ -52,7 +52,7 @@ const router = createBrowserRouter([
       {
         path: "/product",
         element: <Product />,
-        loader: () => fetch("http://localhost:8000/product"),
+        loader: () => fetch("https://revenue-server.vercel.app/product"),
       },
       {
         path: "/product/:id",
@@ -69,7 +69,7 @@ const router = createBrowserRouter([
       {
         path: "/blogs",
         element: <Blogs />,
-        loader: () => fetch("http://localhost:8000/blogs"),
+        loader: () => fetch("https://revenue-server.vercel.app/blogs"),
       },
       {
         path: "/blogs/:id",

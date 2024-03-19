@@ -12,7 +12,7 @@ const Blogs = () => {
   const [itemPerPage, setItemPerPage] = useState(2);
   useEffect(() => {
     fetch(
-      `http://localhost:8000/blogsPagination?page=${currentPage}&limit=${itemPerPage}`
+      `https://revenue-server.vercel.app/blogsPagination?page=${currentPage}&limit=${itemPerPage}`
     )
       .then((res) => res.json())
       .then((data) => setBlogsPagination(data));
