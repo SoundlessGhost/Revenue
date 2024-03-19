@@ -3,8 +3,14 @@ import { Link } from "react-router-dom";
 /* eslint-disable react/no-unescaped-entities */
 const Blog = () => {
   return (
-    <div className="mt-36 flex justify-between px-10 bg-slate-50 py-28 blogContainer">
-      <div className="border-0 w-[800px] border-l-2 pl-6 border-blue-500">
+    <div
+      id="blogMainContainer"
+      className="mt-36 flex justify-between px-10 bg-slate-50 py-28 blogContainer"
+    >
+      <div
+        id="blogSubContainer"
+        className="border-0 w-[800px] border-l-2 pl-6 border-blue-500"
+      >
         <h2 className="text-2xl mb-4">
           Patience is never weakness, it's a gift
         </h2>
@@ -25,7 +31,11 @@ const Blog = () => {
           </button>
         </Link>
       </div>
-      <div className="border-0 w-[830px] border-l-2 pl-6 border-blue-500">
+
+      <div
+        id="blogSubContainer"
+        className="border-0 w-[830px] border-l-2 pl-6 border-blue-500"
+      >
         <h2 className="text-2xl mb-4">Paradise should be everyone's dream</h2>
         <p>
           The world is not a place to live. No one can take anything away.
@@ -44,7 +54,11 @@ const Blog = () => {
           </button>
         </Link>
       </div>
-      <div className="border-0 w-[800px] border-l-2 pl-6 border-blue-500">
+
+      <div
+        id="blogSubContainer"
+        className="border-0 w-[800px] border-l-2 pl-6 border-blue-500"
+      >
         <h2 className="text-2xl mb-4">Stay happy and spread happiness</h2>
         <p>
           Remember, you're the one who can fill the world with sunshine. If you

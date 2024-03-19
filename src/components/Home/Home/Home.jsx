@@ -20,7 +20,7 @@ const Home = () => {
         <MainSwiper />
       </div>
       <Blog />
-      <div className="mt-[150px]">
+      <div className="mt-[150px]" id="BusinessTextBusinessCarouselTogether">
         <BusinessText />
         <BusinessCarousel />
       </div>

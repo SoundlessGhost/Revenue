@@ -80,7 +80,7 @@ export function Header() {
   return (
     <>
       <header className={scrolled ? "scrolled" : ""}>
-        <div className="flex items-center justify-between container pt-5 pb-10 Website_Name bg-slate-50">
+        <div id="headerContainer" className="flex items-center justify-between container pt-5 pb-10 Website_Name bg-slate-50">
           <Link to="/">
             <div className="flex items-center">
               <img 

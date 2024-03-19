@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 const BusinessText = () => {
   return (
-    <div className="h-[400px] w-[600px] ml-28 talk">
+    <div id="BusinessTextContainer" className="h-[400px] w-[600px] ml-28 talk">
       <p>
         <small className="text-gray-400">FIND OUT MORE</small>
       </p>
       <div>
-        <div className="text-6xl my-4">
+        <div id="BusinessTextTitle" className="text-6xl my-4">
           Talk to our <br /> <div className="text-orange-900">support Team</div>
         </div>
         <p className="talkTitle">Learn more about the range of our services.</p>

@@ -227,6 +227,12 @@ header.hidden {
 
   /* Header Style */
 
+  #headerContainer {
+    width: 428px;
+    position: absolute;
+    padding-bottom: 20px;
+  }
+
   #navContainer {
     display: none;
   }
@@ -243,15 +249,17 @@ header.hidden {
     font-size: 14px;
   }
   #mainCarouselSlider {
+    margin: 5px 0;
     width: 200px;
     font-size: 12px;
   }
   #mainSwiper {
-    margin-left: 250px;
+    
+    margin-left: 220px;
     margin-top: -350px;
   }
   #swiperImg {
-    width: 200px;
+    width: 250px;
     height: 150px;
   }
   .swiperStyle {
@@ -382,7 +390,7 @@ header.hidden {
   /* ExcitingFeature Style */
 
   #ExcitingFeatureBG {
-    margin: 0 35px;
+    margin: 20px 35px;
     display: block;
   }
   #ExcitingFeatureContainer {
@@ -410,5 +418,83 @@ header.hidden {
     font-size: 10px;
     width: 300px;
     margin: 0px;
+  }
+
+  /* Home Blog Style */
+
+  #blogMainContainer {
+    display: block;
+    margin: 0;
+    margin-top: 150px;
+    padding: 40px 20px;
+  }
+  #blogSubContainer {
+    border: none;
+    border-bottom: 2px solid skyblue;
+    width: 350px;
+    margin-bottom: 20px;
+  }
+  #blogSubContainer h2 {
+    margin: 0px;
+    font-size: 16px;
+  }
+  #blogSubContainer p {
+    margin: 0px;
+    width: 350px;
+    font-size: 10px;
+  }
+  #blogSubContainer button {
+    margin: 0px;
+    font-size: 12px;
+  }
+
+  /* BusinessText Style */
+
+  #BusinessTextContainer {
+    margin: 50px 20px;
+  }
+  #BusinessTextContainer p small {
+    font-size: 10px;
+    margin: 0px;
+  }
+  #BusinessTextTitle {
+    font-size: 25px;
+    margin: 10px 0;
+  }
+  #BusinessTextContainer p {
+    font-size: 10px;
+    width: 200px;
+  }
+  #BusinessTextContainer a {
+    margin: 10px 0;
+  }
+  #BusinessTextContainer a small {
+    font-size: 8px;
+    margin: 0px;
+    padding: 10px 5px;
+  }
+  #BusinessTextContainer a img {
+    width: 30px;
+  }
+  #BusinessTextBusinessCarouselTogether {
+    margin: 30px 0;
+  }
+
+  /* BusinessCarousel Style */
+
+  #BusinessCarouselContainer {
+    margin: 50px 0;
+    margin-left: 250px;
+    margin-top: -450px;
+  }
+  #BusinessCarouselImg {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Scroll Top */
+
+  .scrollHover img {
+    width: 30px;
   }
 }
