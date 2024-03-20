@@ -336,7 +336,7 @@ header.hidden {
   /* Conversion Style */
 
   #conversionContainer {
-    margin: 20px 5px;
+    margin: 50px 20px;
   }
   #conversionContainer #firstImg {
     width: 250px;
@@ -362,6 +362,25 @@ header.hidden {
   #conversionText {
     margin: 0px;
     font-size: 8px;
+  }
+  #ConversionLoopImg {
+    position: absolute;
+    animation: moveUpDown 6s infinite alternate;
+    left: 30px;
+    top: 130px;
+  }
+
+  @keyframes moveUpDown {
+    from {
+      left: -10px;
+    }
+    to {
+      left: 117px;
+    }
+  }
+  #ConversionLoopImg img {
+    height: 80px;
+    width: 80px;
   }
 
   /* Marquee Style */
@@ -395,8 +414,12 @@ header.hidden {
     margin: 0px;
   }
   #ExcitingFeatureTitle {
-    margin-bottom: 20px;
     font-size: 18px;
+  }
+  #ExcitingFeatureSubTitle {
+    font-size: 8px;
+    margin-bottom: 20px;
+    color: rgb(69, 7, 113);
   }
   #ExcitingFeatureCard {
     width: 350px;
@@ -568,35 +591,149 @@ header.hidden {
     width: 30px;
   }
   #blogPadding {
-    padding-bottom:60px ;
+    padding-bottom: 60px;
   }
-  
+
   /* Single View Blogs Style */
 
-  #BlogsViewContainer{
+  #BlogsViewContainer {
     margin-top: 60px;
   }
-  #BlogsViewSubContainer img{
+  #BlogsViewSubContainer img {
     width: 340px;
     margin-bottom: 0;
   }
-  #BlogsViewSubContainer p small{
+  #BlogsViewSubContainer p small {
     margin: 0px;
     font-size: 10px;
   }
-  #BlogsViewSubContainer h1{
+  #BlogsViewSubContainer h1 {
     margin: 0px;
     font-size: 18px;
   }
-  #BlogsViewSubContainer p{
+  #BlogsViewSubContainer p {
     font-size: 10px;
     width: 300px;
   }
-  #recentPost{
+  #recentPost {
     display: none;
   }
-  #ControlMyEmotion{
+  #ControlMyEmotion {
     padding: 15px 10px;
     text-align: center;
+  }
+
+  /* Portfolio Style */
+
+  #PortfolioMainContainer {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+  #PortfolioManagement {
+    padding: 100px 0;
+  }
+  #PortfolioManagement h3 {
+    font-size: 20px;
+  }
+  #PortfolioContainer {
+    margin: 30px;
+    display: block;
+  }
+  #PortfolioContainer p {
+    width: 380px;
+    padding: 0;
+  }
+  #PortfolioExtraText {
+    display: none;
+  }
+  #PortfolioDetails {
+    margin: 0;
+    margin-top: 18px;
+  }
+  #PortfolioImgContainer {
+    margin: 10px 20px;
+    padding: 0;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #PortfolioImgContainer img {
+    height: 200px;
+    width: 200px;
+  }
+
+  /* login Style */
+
+  #loginContainer {
+    display: block;
+    margin: 0;
+  }
+  #loginFormContainer {
+    margin: 0 20px;
+    margin-top: 100px;
+  }
+  #loginFormContainer h3 {
+    font-size: 25px;
+    margin-left: 50px;
+    align-items: center;
+  }
+  #loginFormContainer small {
+    font-size: 12px;
+  }
+  #loginInputContainer input {
+    width: 350px;
+  }
+  #SwitchBetweenPageContainer {
+    margin: 0;
+    height: 200px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #SwitchBetweenPageSubContainer h1 {
+    font-size: 35px;
+    margin: 0;
+  }
+  #SwitchBetweenPageSubContainer p {
+    font-size: 12px;
+  }
+  #SwitchBetweenPageSubContainer a p{
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 35px;
+  }
+  #SwitchRegisterPageContainer{
+    margin-top: -17px;
+    height: 250px;
+  }
+  #SwitchWebsiteLogo {
+    margin: 0px;
+    padding: 30px;
+    padding-left: -0px;
+  }
+  #SwitchRegisterSubPageContainer h1{
+    font-size: 35px;
+    margin: 0;
+  }
+
+  #SwitchRegisterSubPageContainer p {
+    font-size: 12px;
+  }
+  #SwitchRegisterSubPageContainer a p{
+    margin-top: 0;
+  }
+  
+  #RegisterFormContainer {
+    margin: 0 20px;
+    margin-top: 60px;
+  }
+  #RegisterFormContainer h3 {
+    font-size: 25px;
+    margin-left: 50px;
+    align-items: center;
+  }
+  #RegisterFormContainer small {
+    font-size: 12px;
   }
 }

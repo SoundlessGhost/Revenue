@@ -68,7 +68,7 @@ const Login = () => {
         <title>Login || The world of revenue</title>
       </Helmet>
 
-      <div className="grid grid-cols-[3fr,1.2fr] ml-10">
+      <div id="loginContainer" className="grid grid-cols-[3fr,1.2fr] ml-10">
         <div>
           <div
             onClick={() => navigate("/")}
@@ -82,7 +82,7 @@ const Login = () => {
             <p className="Website_Name text-3xl">Revenue</p>
           </div>
 
-          <div className="mt-[120px] ml-[200px]">
+          <div id="loginFormContainer" className="mt-[120px] ml-[200px]">
             <h3 className="Website_Name text-4xl">Login To Your Account</h3>
             <small className="Website_Name ml-[90px]">
               Login Using Social Networks
@@ -108,7 +108,7 @@ const Login = () => {
             <hr className="w-40 ml-20 mt-2 mb-4"></hr>
 
             <form action="" onSubmit={handleSubmit(onsubmit)}>
-              <div>
+              <div id="loginInputContainer">
                 <input
                   className="p-2 pl-8 rounded-lg w-96 placeholder:font-serif border-slate-300 border"
                   type="email"
@@ -145,7 +145,8 @@ const Login = () => {
                   )}
                 </label>
               </div>
-              <div>
+
+              <div id="loginInputContainer">
                 <input
                   className="p-2 pl-8 rounded-lg w-96 placeholder:font-serif border-slate-300 border mt-4"
                   type="password"
@@ -191,16 +192,22 @@ const Login = () => {
             </form>
           </div>
         </div>
-        <div className="h-[100vh] bg-slate-400 text-center Website_Name">
-          <h1 className="mt-[200px] text-5xl mb-4 ">Hello Friend!</h1>
-          <p className="text-1xl">
-            Enter our personal details and <br /> start the journey with us.
-          </p>
-          <Link to="/register">
-            <p className="border-slate-500 border rounded-lg py-2 w-32 mt-6 ml-[140px]">
-              Sign Up
+
+        <div
+          id="SwitchBetweenPageContainer"
+          className="h-[100vh] bg-slate-400 text-center Website_Name"
+        >
+          <div id="SwitchBetweenPageSubContainer">
+            <h1 className="mt-[200px] text-5xl mb-4 ">Hello Friend!</h1>
+            <p className="text-1xl">
+              Enter our personal details and <br /> start the journey with us.
             </p>
-          </Link>
+            <Link to="/register">
+              <p className="border-slate-500 border rounded-lg py-2 w-32 mt-6 ml-[140px]">
+                Sign Up
+              </p>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

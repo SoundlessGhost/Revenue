@@ -1,8 +1,11 @@
 const ExcitingFeature = () => {
   return (
     <div className="Website_Name bg-slate-50 py-20 mt-28" id="ExcitingFeatureContainer">
-      <h1 className="text-4xl text-center mb-16" id="ExcitingFeatureTitle"> 
+      <h1 className="text-4xl text-center" id="ExcitingFeatureTitle"> 
         Exciting features of Revenue
+      </h1>
+      <h1 className="text-[0px] text-center mb-16" id="ExcitingFeatureSubTitle"> 
+       login to view more information
       </h1>
 
       <div className="flex items-center justify-between mx-10 " id="ExcitingFeatureBG">

@@ -50,9 +50,13 @@ const Register = () => {
         <Helmet>
           <title>Register || The world of revenue</title>
         </Helmet>
-        <div className="grid grid-cols-[1.2fr,3fr]">
-          <div className="h-[100vh] bg-slate-400 text-center Website_Name">
+        <div id="loginContainer" className="grid grid-cols-[1.2fr,3fr]">
+          <div
+            id="SwitchRegisterPageContainer"
+            className="h-[100vh] bg-slate-400 text-center Website_Name"
+          >
             <div
+              id="SwitchWebsiteLogo"
               onClick={() => navigate("/")}
               className="flex items-center mt-4 ml-10 cursor-pointer"
             >
@@ -63,19 +67,25 @@ const Register = () => {
               />
               <p className="Website_Name text-3xl">Revenue</p>
             </div>
-            <h1 className="mt-[150px] text-5xl mb-4 ">Welcome Back!</h1>
-            <p className="text-1xl">
-              To keep connected with us please <br /> login with your personal
-              information .
-            </p>
-            <Link to="/login">
-              <p className="border-slate-500 border rounded-lg py-2 w-32 mt-6 ml-[140px]">
-                Sign In
-              </p>
-            </Link>
+
+            <div>
+              <div id="SwitchRegisterSubPageContainer">
+                <h1 className="mt-[150px] text-5xl mb-4 ">Welcome Back!</h1>
+                <p className="text-1xl">
+                  To keep connected with us please <br /> login with your
+                  personal information .
+                </p>
+                <Link to="/login">
+                  <p className="border-slate-500 border rounded-lg py-2 w-32 mt-6 ml-[140px]">
+                    Sign In
+                  </p>
+                </Link>
+              </div>
+            </div>
           </div>
+
           <div>
-            <div className="mt-[120px] ml-[200px]">
+            <div id="RegisterFormContainer" className="mt-[120px] ml-[200px]">
               <h3 className="Website_Name text-4xl ml-4">
                 Create Your Account
               </h3>
