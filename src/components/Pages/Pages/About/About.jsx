@@ -11,20 +11,23 @@ const About = () => {
       <Helmet>
         <title>About || The world of revenue</title>
       </Helmet>
-      <div className="flex justify-center py-20 Website_Name text-center bg-slate-50">
+      <div
+        id="TeamAboutContactContainer"
+        className="flex justify-center py-20 Website_Name text-center bg-slate-50"
+      >
         <div>
           <small>
             <Link to="/">HOME</Link> / <Link to="/team">ABOUT</Link>
           </small>
           <p className="text-4xl my-4">About </p>
-          <p className="">
+          <p id="TeamAboutContactContainerText">
             We can help you develop and execute a clear and strategic <br /> IT
             roadmap with priorities that are closely linked to business goals.
           </p>
         </div>
       </div>
 
-      <div className="m-20 Website_Name flex">
+      <div id="WhoWeAreContainer" className="m-20 Website_Name flex">
         <div className="w-[800px]">
           <p>
             <small className="text-blue-500">Who We Are</small>
@@ -46,10 +49,11 @@ const About = () => {
             maiores itaque?
           </p>
         </div>
-        <div>
+
+        <div id="aboutImg">
           <img
-            className="w-[400px] rounded-lg imgHover"
-            src="https://images.unsplash.com/photo-1521459467264-802e2ef3141f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D"
+            className="w-[400px] h-[550px] rounded-lg imgHover"
+            src="https://images.unsplash.com/photo-1549492423-400259a2e574?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmFjayUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D"
             alt=""
           />
           <div className="">
@@ -62,11 +66,11 @@ const About = () => {
         </div>
       </div>
 
-      <div className=" mt-60 mb-32 mx-5">
+      <div id="OurAmazingTeamText" className=" mt-60 mb-32 mx-5">
         <h1 className="text-center text-4xl mb-20 font-semibold">
           Our Amazing Team
         </h1>
-        <div className="flex justify-between">
+        <div id="OurAmazingTeam" className="flex justify-between">
           <div className=" shadow-lg rounded-lg">
             <img src={Ceo} className="h-[300px] w-[320px] rounded-lg" alt="" />
             <div className="text-center Website_Name mb-4 py-3 mt-2">
@@ -126,7 +130,10 @@ const About = () => {
           <span className="text-blue-500">unearthly</span>.
         </h1>
 
-        <div className="flex items-center justify-between m-20  ">
+        <div
+          id="industryExperiences"
+          className="flex items-center justify-between m-20  "
+        >
           <div className="w-[900px]">
             <h3 className="text-blue-500">INDUSTRY EXPERIENCES</h3>
             <h1 className="my-4 text-4xl">

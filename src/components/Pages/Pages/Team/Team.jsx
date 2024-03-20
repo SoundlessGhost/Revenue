@@ -3,26 +3,29 @@ import Ceo from "../../../../assets/shahed.jpg";
 import { Helmet } from "react-helmet";
 const Team = () => {
   return (
-    <div  className="mt-20">
-       <Helmet>
+    <div className="mt-20">
+      <Helmet>
         <title>Team || The world of revenue</title>
       </Helmet>
-      <div className="flex justify-center py-20 Website_Name text-center bg-slate-50">
+      <div
+        id="TeamAboutContactContainer"
+        className="flex justify-center py-20 Website_Name text-center bg-slate-50"
+      >
         <div>
           <small>
             <Link to="/">HOME</Link> / <Link to="/team">TEAM</Link>
           </small>
           <p className="text-4xl my-4">Team</p>
-          <p className="">
+          <p id="TeamAboutContactContainerText">
             We can help you develop and execute a clear and strategic <br /> IT
             roadmap with priorities that are closely linked to business goals.
           </p>
         </div>
       </div>
 
-      <div className="grid  mt-10 mx-20 grid-cols-[6fr,3fr]">
+      <div id="TeamContainer" className="grid  mt-10 mx-20 grid-cols-[6fr,3fr]">
         <div className="flex">
-          <div className="mr-20">
+          <div id="TeamSubContainer" className="mr-20">
             <div className="mb-10">
               <img
                 src={Ceo}
@@ -79,6 +82,7 @@ const Team = () => {
             </div>
           </div>
         </div>
+
         <div className="Website_Name">
           <h1 className="text-6xl my-6">Our Creative Team </h1>
           <hr />

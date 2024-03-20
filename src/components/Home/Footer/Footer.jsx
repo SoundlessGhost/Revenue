@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <div
-        className="flex px-20 py-28 justify-between bg-slate-100 "
+        className="flex px-20 py-24 bg-slate-100 "
         id="footerContainer"
       >
         <div>
@@ -16,6 +16,7 @@ const Footer = () => {
             experts and a funding platform that’s helped raise over 5M .
           </p>
           <p className="border-0 border-t border-gray-500 h-1 w-6"></p>
+
           <div className=" flex items-center mt-4" id="footerMediaImg">
             <Link
               target="blank"
@@ -44,63 +45,65 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="Website_Name" id="footerTitle">
-          <h1 className="font-serif mb-2">COMPANY</h1>
-          <div>
-            <p className="text-gray-500 hover:text-black">
-              <Link to="/about">About Us</Link>
-            </p>
-            <p className="text-gray-500 hover:text-black">
-              <Link to="/team">Services</Link>
-            </p>
-            <p className="text-gray-500 hover:text-black">
-              <Link to="/contact">Contact</Link>
-            </p>
-            <p className="border-0 border-t border-blue-500 h-1 w-6"></p>
+        <div className="flex justify-between" id="footerTitleContainer">
+          <div className="Website_Name ml-24" id="footerTitle">
+            <h1 className="font-serif mb-2">COMPANY</h1>
+            <div>
+              <p className="text-gray-500 hover:text-black">
+                <Link to="/about">About Us</Link>
+              </p>
+              <p className="text-gray-500 hover:text-black">
+                <Link to="/team">Services</Link>
+              </p>
+              <p className="text-gray-500 hover:text-black">
+                <Link to="/contact">Contact</Link>
+              </p>
+              <p className="border-0 border-t border-blue-500 h-1 w-6"></p>
+            </div>
           </div>
-        </div>
 
-        <div className="Website_Name" id="footerTitle">
-          <h1 className="font-serif mb-2">SOLUTIONS</h1>
-          <p className="text-gray-500 hover:text-black">
-            <Link to="/team">Business Consulting</Link>
-          </p>
-          <p className="text-gray-500 hover:text-black">
-            <Link to="/team">Financial Advisory</Link>
-          </p>
-          <p className="text-gray-500 hover:text-black">
-            <Link to="/team">Business Planning</Link>
-          </p>
-          <p className="border-0 border-t border-red-500 h-1 w-6"></p>
-        </div>
-
-        <div className="Website_Name" id="footerTitle">
-          <h1 className="font-serif mb-2">CONTACT</h1>
-          <p className="text-gray-500 hover:text-black flex items-center">
-            <img
-              className="w-4 mr-1"
-              src="https://cdn-icons-png.flaticon.com/128/725/725624.png"
-              alt=""
-            />
-            <Link to="/contact">01794951003</Link>
-          </p>
-          <p className="text-gray-500 hover:text-black flex items-center">
-            <img
-              className="w-4 mr-1"
-              src="https://cdn-icons-png.flaticon.com/128/6244/6244710.png"
-              alt=""
-            />
-            <Link to="/contact">shahedak47mk47@gmail.com</Link>
-          </p>
-          <div className="text-gray-500 hover:text-black flex items-center">
-            <img
-              className="w-4 mr-1"
-              src="https://cdn-icons-png.flaticon.com/128/5616/5616461.png"
-              alt=""
-            />
-            <p>Sirajganj, Dhaka, Bangladesh</p>
+          <div className="Website_Name ml-24" id="footerTitle">
+            <h1 className="font-serif mb-2">SOLUTIONS</h1>
+            <p className="text-gray-500 hover:text-black">
+              <Link to="/team">Business Consulting</Link>
+            </p>
+            <p className="text-gray-500 hover:text-black">
+              <Link to="/team">Financial Advisory</Link>
+            </p>
+            <p className="text-gray-500 hover:text-black">
+              <Link to="/team">Business Planning</Link>
+            </p>
+            <p className="border-0 border-t border-red-500 h-1 w-6"></p>
           </div>
-          <p className="border-0 border-t border-green-500 h-1 w-6"></p>
+
+          <div className="Website_Name ml-24" id="footerTitle">
+            <h1 className="font-serif mb-2">CONTACT</h1>
+            <p className="text-gray-500 hover:text-black flex items-center">
+              <img
+                className="w-4 mr-1"
+                src="https://cdn-icons-png.flaticon.com/128/725/725624.png"
+                alt=""
+              />
+              <Link to="/contact">01794951003</Link>
+            </p>
+            <p className="text-gray-500 hover:text-black flex items-center">
+              <img
+                className="w-4 mr-1"
+                src="https://cdn-icons-png.flaticon.com/128/6244/6244710.png"
+                alt=""
+              />
+              <Link to="/contact">shahedak47mk47@gmail.com</Link>
+            </p>
+            <div className="text-gray-500 hover:text-black flex items-center">
+              <img
+                className="w-4 mr-1"
+                src="https://cdn-icons-png.flaticon.com/128/5616/5616461.png"
+                alt=""
+              />
+              <p>Sirajganj, Dhaka, Bangladesh</p>
+            </div>
+            <p className="border-0 border-t border-green-500 h-1 w-6"></p>
+          </div>
         </div>
       </div>
     </>

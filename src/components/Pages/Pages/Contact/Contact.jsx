@@ -9,20 +9,23 @@ const Contact = () => {
       <Helmet>
         <title>Contact || The world of revenue</title>
       </Helmet>
-      <div className="flex justify-center py-20 Website_Name text-center bg-slate-50">
+      <div
+        id="TeamAboutContactContainer"
+        className="flex justify-center py-20 Website_Name text-center bg-slate-50"
+      >
         <div>
           <small>
             <Link to="/">HOME</Link> / <Link to="/contact">CONTACT</Link>
           </small>
           <p className="text-4xl my-4">Contact</p>
-          <p className="">
+          <p id="TeamAboutContactContainerText">
             We can help you develop and execute a clear and strategic <br /> IT
             roadmap with priorities that are closely linked to business goals.
           </p>
         </div>
       </div>
 
-      <div className="flex justify-between items-center mt-20 mx-20 px-10 py-10 rounded-lg shadow-lg">
+      <div id="ContactContainer" className="flex justify-between items-center mt-20 mx-20 px-10 py-10 rounded-lg shadow-lg">
         <div>
           <form className="Website_Name" action="">
             <label>
@@ -66,12 +69,13 @@ const Contact = () => {
             />
           </form>
         </div>
-        <div className="flex h-[450px] bg-gradient-to-r w-[450px] text-center from-sky-400 to-indigo-500 py-10 px-10 justify-between border border-gray-300 rounded-lg">
+
+        <div id="ContactInformation" className="flex h-[450px] bg-gradient-to-r w-[450px] text-center from-sky-400 to-indigo-500 py-10 px-10 justify-between border border-gray-300 rounded-lg">
           <div className="Website_Name">
             <h1 className="text-3xl text-center mb-4">Contact Information</h1>
             <p>We’ll create high-quality linkable content</p>
 
-            <div className="mt-48">
+            <div className="mt-48 contactNumber">
               <div className="flex items-center">
                 <img
                   className="w-6 mb-2 mr-2"
@@ -101,8 +105,8 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="flex justify-around items-center mx-20 my-32 Website_Name">
-        <div>
+      <div id="ContactHelpAndSupportContainer" className="flex justify-around items-center mx-20 my-32 Website_Name">
+        <div id="ContactImgContainer">
           <img
             className="w-16"
             src="https://cdn-icons-png.flaticon.com/128/4293/4293688.png"
@@ -115,7 +119,8 @@ const Contact = () => {
             help with <br /> a current product or service or refer to FAQs.
           </p>
         </div>
-        <div>
+
+        <div id="ContactImgContainer">
           <img
             className="w-16"
             src="https://cdn-icons-png.flaticon.com/128/6717/6717201.png"
@@ -128,7 +133,8 @@ const Contact = () => {
             call us.
           </p>
         </div>
-        <div>
+
+        <div id="ContactImgContainer">
           <img
             className="w-16"
             src="https://cdn-icons-png.flaticon.com/128/12523/12523289.png"

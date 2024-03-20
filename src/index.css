@@ -128,7 +128,7 @@
 
 .imgHover {
   transition: transform 0.5s;
-  box-shadow: rgb(224, 224, 224) 10px 10px 20px -4px;
+  box-shadow: rgb(150, 150, 150) 10px 10px 20px -4px;
 }
 .imgHover:hover {
   transform: translateY(-13px);
@@ -305,32 +305,44 @@ header.hidden {
   /* Footer Style */
 
   #footerContainer {
+    display: block;
     padding: 20px;
     margin-top: 0px;
   }
+  #footerTitleContainer{
+    margin: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #footerTitle {
+    margin-left: 0px;
+  }
   #footerTitle h1 {
-    font-size: 10px;
+    font-size: 16px;
     margin-bottom: 5px;
   }
   #footerTitle img {
     display: none;
   }
   #footerTitle p {
-    font-size: 8px;
+    font-size: 12px;
   }
   #footerMediaImg {
+    display: block;
     position: absolute;
-    margin-top: -40px;
-    margin-left: 120px;
+    margin-top: -120px;
+    margin-left: 360px;
   }
   #footerMediaImg img {
     position: relative;
     width: 25px;
     padding: 7px;
+    margin-bottom: 10px;
   }
   #footerText {
-    font-size: 10px;
-    width: 120px;
+    font-size: 18px;
+    width: 350px;
   }
 
   /* Conversion Style */
@@ -698,12 +710,12 @@ header.hidden {
   #SwitchBetweenPageSubContainer p {
     font-size: 12px;
   }
-  #SwitchBetweenPageSubContainer a p{
+  #SwitchBetweenPageSubContainer a p {
     margin: 0;
     margin-top: 5px;
     margin-left: 35px;
   }
-  #SwitchRegisterPageContainer{
+  #SwitchRegisterPageContainer {
     margin-top: -17px;
     height: 250px;
   }
@@ -712,7 +724,7 @@ header.hidden {
     padding: 30px;
     padding-left: -0px;
   }
-  #SwitchRegisterSubPageContainer h1{
+  #SwitchRegisterSubPageContainer h1 {
     font-size: 35px;
     margin: 0;
   }
@@ -720,10 +732,10 @@ header.hidden {
   #SwitchRegisterSubPageContainer p {
     font-size: 12px;
   }
-  #SwitchRegisterSubPageContainer a p{
+  #SwitchRegisterSubPageContainer a p {
     margin-top: 0;
   }
-  
+
   #RegisterFormContainer {
     margin: 0 20px;
     margin-top: 60px;
@@ -735,5 +747,101 @@ header.hidden {
   }
   #RegisterFormContainer small {
     font-size: 12px;
+  }
+
+  /* Mix */
+  #TeamAboutContactContainer {
+    padding: 40px 0;
+  }
+  #TeamAboutContactContainerText {
+    font-size: 12px;
+  }
+
+  /* Team Style */
+
+  #TeamContainer {
+    display: block;
+    margin: 0;
+    margin-left: 20px;
+  }
+  #TeamContainer img {
+    height: 200px;
+    width: 200px;
+  }
+  #TeamSubContainer {
+    margin-right: 20px;
+  }
+
+  /* About Style */
+
+  #OurAmazingTeam {
+    display: block;
+  }
+  #OurAmazingTeamText {
+    margin: 20px 40px;
+  }
+  #industryExperiences {
+    margin: 40px;
+    display: block;
+  }
+  #industryExperiences p {
+    width: 350px;
+  }
+  #industryExperiences a {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #aboutImg {
+    display: none;
+  }
+  #WhoWeAreContainer {
+    margin: 20px;
+  }
+  #WhoWeAreContainer h1 {
+    font-size: 35px;
+  }
+  #WhoWeAreContainer p {
+    width: 350px;
+  }
+
+  /* Contact Style */
+
+  #ContactContainer {
+    display: block;
+    margin: 20px;
+  }
+  #ContactContainer input {
+    width: 300px;
+    padding: 8px;
+  }
+  #ContactContainer textarea {
+    width: 300px;
+    height: 200px;
+  }
+  #ContactHelpAndSupportContainer {
+    display: block;
+    margin: 40px;
+  }
+  #ContactImgContainer {
+    margin-bottom: 40px;
+  }
+  #ContactImgContainer img {
+    width: 30px;
+    margin: 0px;
+  }
+  #ContactImgContainer h1 {
+    margin: 0px;
+  }
+  #ContactImgContainer p {
+    margin: 0px;
+  }
+  #ContactInformation {
+    margin-top: 40px;
+    width: 300px;
+    height: 350px;
+  }
+  #ContactInformation .contactNumber {
+    margin-top: 60px;
   }
 }
